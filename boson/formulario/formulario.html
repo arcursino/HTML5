@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>  Formulários</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<p><strong>Trabalhando com Formulários</strong></p>
+
+<form name="cadastro"action="processa.php"method="POST"
+accept-charset="UTF-8">
+
+<label>Nome: 
+	<input types="text" name="Nome" id="text1"size="30"
+placeholder="Digite seu nome aqui" autofocus />
+</label>
+<br>
+<label for="text2">Sobrenome:</label>
+	<input types="text" name="Sobrenome" id="text2" size="50" 
+placeholder="Digite seu sobrenome aqui"/>
+<br>
+
+Sexo:<br>
+	<input type="radio" name="sexo" value="M"> Masculino <br>
+	<input type="radio" name="sexo" value="F"> Feminino <br>
+	<input type="radio" name="sexo" value="N"> Não declarado <br>
+<br>
+Estado Civil:<br>
+	<input type="radio" name="EstCivil" value="Solteiro" checked>Solteiro <br>
+	<input type="radio" name="EstCivil" value="Casado">Casado <br>
+	<input type="radio" name="EstCivil" value="Divorciado" >Divorciado <br>
+	<input type="radio" name="EstCivil" value="Viúvo" >Viúvo <br>
+	<input type="radio" name="EstCivil" value="Outros">Outros <br>
+<br>
+
+Endereço: <input types="text" name="Endereço" size = "60" /><br>
+Senha: <input type="password" name="senha"
+maxlength="10" required><br>
+
+<fieldset>
+<legend>Marque as opções de seu interesse:</legend>
+
+	<input type="checkbox" name="linguagens" id="ling01" value="C#">
+		<label for="ling01">C#</label><br>
+	<input type="checkbox" name="linguagens" id="ling02" value="JavaScript" checked>
+		<label for="ling02">JavaScript</label><br>
+	<input type="checkbox" name="linguagens" id="ling03" value="PHP">
+		<label for="ling03">PHP</label><br>
+	<input type="checkbox" name="linguagens" id="ling04" value="Python">
+		<label for="ling01">Python</label><br>
+
+</fieldset>
+
+
+<input type="submit" value="Enviar" />
+	
+</form>
+</body>	
+
+</html>
+
+<!--
+
+<div>
+	<button>Enviar dados!</button>
+</div>
+-->
+
+
+
+
+
+
